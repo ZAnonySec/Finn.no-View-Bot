@@ -3,7 +3,9 @@
 
 Just install the file and run it with python in CMD, for Linux coming soon
 
-Requirements
-# pip install pyautogui
+# Requirements
+pip install pyautogui
 
-# pip install pyfiglet
+pip install pyfiglet
+
+pip install pyautogui
