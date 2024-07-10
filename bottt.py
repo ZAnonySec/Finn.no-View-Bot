@@ -3,6 +3,7 @@ import pyfiglet
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
+import re
 
 # Initialize colorama
 init(autoreset=True)
@@ -10,16 +11,29 @@ init(autoreset=True)
 # Create a Figlet font object
 custom_fig = pyfiglet.Figlet(font='big')
 
+# Function to validate if the URL is from Finn.no
+def validate_finn_url(url):
+    if 'finn.no' in url:
+        return True
+    return False
+
 # Print the menu options with colors
 print(Fore.GREEN + custom_fig.renderText('Choose Delay:'))
-print("1. " + Fore.RED + "Slow (15 tabs)")
-print("2. " + Fore.LIGHTYELLOW_EX + "Normal (50 tabs)")
-print("3. " + Fore.LIGHTGREEN_EX + "Turbo (100 tabs)")
+print("1. " + Fore.RED + "Slow (5 second delay)")
+print("2. " + Fore.LIGHTYELLOW_EX + "Normal (2 second delay)")
+print("3. " + Fore.LIGHTGREEN_EX + "Turbo (1 second delay)")
 print("4. " + Fore.CYAN + "Custom (Specify number of tabs)")
-print("Disclaimer. " + Fore.CYAN + "More ram = More power (use this at ur own risk ;) )")
 
 # Get user input for delay option
 delay_option = input("Enter your choice: ")
+
+# Get the URL from the user
+url = input("Enter the Finn.no ad URL: ")
+
+# Validate the URL
+if not validate_finn_url(url):
+    print("Invalid link. Please provide a Finn.no ad URL.")
+    exit()
 
 # Function to perform delay based on user choice
 def perform_delay(choice, driver, url):
@@ -42,8 +56,6 @@ def perform_delay(choice, driver, url):
 
 # Now you can run the main code after the delay
 print(Fore.RED + custom_fig.renderText('FINN.NO BOT, made by zer0sec and anony0977'))
-#Change to your URL
-url = 'https://www.finn.no/bap/forsale/ad.html?finnkode=360695455'  # Update with your ad URL
 
 # Set Chrome options to open a new incognito window
 chrome_options = Options()
