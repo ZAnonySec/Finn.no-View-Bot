@@ -7,8 +7,8 @@ First, you need to clone your GitHub repository to your local machine where you 
 
 2 bash
 Copy code
-git clone https://github.com/your-username/your-repository.git
-Replace your-username with your GitHub username and your-repository with the name of your GitHub repository.
+git clone https://github.com/anonymouse0977/Finn.no-View-Bot.git
+
 
 3 Install Dependencies:
 Navigate into the directory where your script (finn_bot.py) is located and install the necessary dependencies. You'll need to install Selenium if you haven't already:
