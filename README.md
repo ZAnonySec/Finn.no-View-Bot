@@ -4,6 +4,8 @@
 Just install the file and run it with python in CMD, for Linux coming soon
 
 # Requirements
+Open CMD
+
 colorama: Used for colored text output.
 
 Install: pip install colorama
@@ -16,6 +18,10 @@ Install: pip install selenium
 chromedriver_installer: Used to install the ChromeDriver for Selenium.
 
 Install: pip install chromedriver_installer
+
+then locate the python script, to lunch it type 
+python FinnBot.py
+
 ![finn no](https://github.com/anonymouse0977/Finn.no-View-Bot/assets/93839066/1fdc7e86-ec99-4816-b359-f12b2ce39209)
 ![finn nobot](https://github.com/anonymouse0977/Finn.no-View-Bot/assets/93839066/bf4d6402-0432-4bfb-83d0-04485262be33)
 
