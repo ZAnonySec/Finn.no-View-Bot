@@ -18,7 +18,7 @@ def validate_finn_url(url):
     return False
 
 # Print the menu options with colors
-print(Fore.GREEN + custom_fig.renderText('Choose Delay:'))
+print(Fore.GREEN + custom_fig.renderText('FINN.NO VIEWBOT:'))
 print("1. " + Fore.RED + "Slow (15 tabs)")
 print("2. " + Fore.LIGHTYELLOW_EX + "Normal (50 tabs)")
 print("3. " + Fore.LIGHTGREEN_EX + "Turbo (100 tabs)")
