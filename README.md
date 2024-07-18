@@ -23,6 +23,8 @@ Install: pip install chromedriver_installer
 then locate the python script, to run it type 
 " python FinnBot.py "
 
+run pip install -r requiremetns.txt file
+
 # Linux
 
 ![finn no](https://github.com/anonymouse0977/Finn.no-View-Bot/assets/93839066/1fdc7e86-ec99-4816-b359-f12b2ce39209)
